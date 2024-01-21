@@ -1,32 +1,44 @@
-/* Here we can toggle the colors by hovering the color and then changing it that we wish */
-:root {
-   --primary-color: #1e29a6cc;
-   --text-color: white;
-   --secondary-color: #8b9bedcc;
-}
-
 body {
-   background-color: var(--secondary-color);
+	background-color: #333333db;
 }
 
-* {
-   padding: 0;
-   margin: 0;
-   font-family: 'Poppins', sans-serif;
+.card {
+	width: 400px;
+	border: 1px solid cyan;
+	border-radius: 25px;
+	padding: 10px;
+	margin: 10px;
+	color: rgba(255, 255, 255, 0.786);
+	text-align: justify;
+	box-shadow: 1.5px 1.5px 5px lightblue;
 }
 
-nav {
-   background-color: var(--primary-color);
-   padding: 12px 0;
+h1 {
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 5px #000000;
 }
 
-ul li {
-   list-style: none;
-   padding: 20px;
-   font-weight: bolder;
-   color: var(--text-color);
+img {
+	width: 100%;
+	border-radius: 25px;
 }
 
-ul {
-   display: flex;
+h3 {
+	text-align: center;
+}
+
+.cuteTom {
+	height: 350px;
+}
+
+#pets {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+@media (max-width: 757px) {
+	#pets {
+		flex-wrap: wrap;
+	}
 }
